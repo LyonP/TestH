@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<title>CSS: tabellenartige Darstellung</title>
+		<meta charset="utf-8">
+		<style>
+			table {
+				border:2px solid #ccc;
+			}
+			td {
+				border:1px solid #666;
+			}
+			div {
+				border:1px solid #ccc;
+				margin:1px;
+			}
+			
+			.table {
+				display:table;
+			}
+			.tr {
+				display:table-row;
+			}
+			.td {
+				display:table-cell;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>Eins</td>
+				<td>Zwei-Zwei</td>
+				<td>Drei<br>Drei<br>Drei</td>
+			</tr>
+			<tr>
+				<td>Eins</td>
+				<td>Zwei</td>
+				<td>Drei</td>
+			</tr>
+		</table>
+		
+		<div class="table">
+			<div class="tr">
+				<div class="td">Eins</div>
+				<div class="td">Zwei-Zwei</div>
+				<div class="td">Drei<br>Drei<br>Drei</div>
+			</div>
+			<div class="tr">
+				<div class="td">Eins</div>
+				<div class="td">Zwei</div>
+				<div class="td">Drei</div>
+			</div>
+		</div>
+	</body>
+</html>

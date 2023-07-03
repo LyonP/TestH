@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<title>Bilder</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<p>Test</p>
+		Test....
+		<img src="bilder/w640_0.jpg" alt="Test">
+		<img src="bilder/w640_2.jpg" alt="...">
+		TEst...
+		<figure>
+			<img src="bilder/w640_1.jpg" alt="..">
+			<figcaption>&copy; Der Fotograf &darr; &uuml; ü</figcaption>
+		</figure>
+		
+		<picture>
+			<source srcset="bilder/w640_0.jpg" media="(max-width:700px)">
+			<source srcset="bilder/w1280_1.jpg" media="(max-width:1300px)">
+			<source srcset="bilder/w1920_2.jpg" media="(min-width:1301px)">
+			<img src="bilder/w1920_2.jpg" alt="..">
+		</picture>
+	</body>
+</html>

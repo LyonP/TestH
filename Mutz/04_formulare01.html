@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<title>Formulare</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form method="get">
+			<label>
+				Ihre Emailadresse:
+				<input type="email" name="Emailadresse" required>
+			</label>
+			<label for="Pass">Ihr Passwort:</label>
+			<input type="password" name="PWD" id="Pass" required>
+			<input type="submit" name="login" value="Einloggen">
+			<!-- <button type="submit">Einloggen</button> -->
+		</form>
+		
+		<form method="get" action="04_register.php">
+			<fieldset>
+				<legend>Pflichtangaben:</legend>
+				<label>
+					Ihre Emailadresse:
+					<input type="email" name="Emailadresse" required placeholder="zB. harald@mueller.at">
+				</label>
+				<label>
+					Ihr Wunschpasswort:
+					<input type="password" name="PWD" required placeholder="mind. 6 Zeichen">
+				</label>
+				<label>
+					Passwort wiederholen:
+					<input type="password" name="PWD2" required>
+				</label>
+			</fieldset>
+			
+			<fieldset>
+				<legend>freiwillige Angaben:</legend>
+				
+				<label>
+					Ihr Vorname:
+					<input type="text" name="VN">
+				</label>
+				<label>
+					Ihr Nachname:
+					<input type="text" name="NN">
+				</label>
+				<div>
+					Geschlecht:
+					<label>
+						<input type="radio" name="Geschlecht" value="weiblich" checked>
+						weiblich
+					</label>
+					<label>
+						<input type="radio" name="Geschlecht" value="männlich">
+						männlich
+					</label>
+					<label>
+						<input type="radio" name="Geschlecht" value="divers">
+						divers
+					</label>
+				</div>
+				<label>
+					Ihr Geburtsdatum:
+					<input type="date" name="GebDatum" value="1972-10-17">
+				</label>
+				<label>
+					Ihr bevorzugtes Hobby:
+					<select name="Hobby">
+						<option>Bitte wählen Sie aus:</option>
+						<option value="1">Sport</option>
+						<option value="7">Musik</option>
+						<option value="23">Kultur</option>
+					</select>
+			</fieldset>
+			
+			<label>
+				Ihre Nachricht an uns:
+				<textarea name="Nachricht" placeholder="Was Sie uns schon immer sagen wollten"></textarea>
+			</label>
+			
+			<label>
+				<input type="checkbox" name="AGB" required>
+				Ich akzeptiere die AGBs
+			</label>
+			<button type="submit" name="register">Registrieren</button>
+		</form>
+	</body>
+</html>

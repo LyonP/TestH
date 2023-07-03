@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<title>JS: DOM</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<img src="bilder/w640_0.jpg" alt=".." id="pic0">
+		<p>Hallo Welt!</p>
+		<script>
+		//document.getElementById("pic0").src = "bilder/w640_1.jpg";
+		document.querySelector("#pic0").src = "bilder/w640_2.jpg";
+		//document.getElementsByTagName("p")[0].innerHTML = '<a href="http://www.wifi.at" target="_blank">Link zum WIFI</a>';
+		document.querySelectorAll("p")[0].innerHTML = 'Test';
+		</script>
+	</body>
+</html>

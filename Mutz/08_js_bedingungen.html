@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<title>JS: Bedingungen</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+		/*
+		var a = 23;
+		console.log("Hallo Welt!");
+		console.log(a);
+		console.log("a=",a);
+		console.log("a=" + a);
+		
+		alert("Hallo Welt!");
+		
+		var b;
+		b = confirm("Wollen Sie das wirklich tun?");
+		console.log("b=",b);
+		
+		var c;
+		c = prompt("Bitte geben Sie Ihren Vornamen ein:");
+		console.log("c=",c);
+		
+		document.write('<p>' + c + '</p>');
+		*/
+		
+		var vn;
+		vn = prompt("Bitte gib Deinen Vornamen ein:");
+		if(vn=="Uwe") {
+			console.log("Hallo Uwe");
+		}
+		else {
+			if(vn=="Silvia") {
+				console.log("Hi");
+			}
+			else {
+				if(vn=="Alexandra" || vn=="alexandra") {
+					console.log("Guten Morgen");
+				}
+				else {
+					console.log("Hallo Unbekannte(r)");
+				}
+			}
+		}
+		
+		switch(vn) {
+			case "Uwe":
+				console.log("Hallo Uwe");
+				break;
+			case "Silvia":
+				console.log("Hi");
+				break;
+			case "Alexandra":
+			case "alexandra":
+				console.log("Guten Morgen");
+				break;
+			default:
+				console.log("Hallo Unbekannte(r)");
+		}
+		
+		var a;
+		a = Math.random(); //Zufallszahl zw. 0-1
+		console.log("a=",a);
+		if(a<0.2) {
+			console.log("a ist kleiner als 0.2");
+		}
+		else {
+			if(a<0.5) {
+				console.log("a ist zwar größer-gleich 0.2, jedoch kleiner als 0.5");
+			}
+			else {
+				if(a<0.8) {
+					console.log("a ist zwar größer-gleich 0.5, jedoch immer noch kleiner als 0.8");
+				}
+				else {
+					console.log("ok, a ist größer-gleich 0.8");
+				}
+			}
+		}
+		
+		switch(true) {
+			case a<0.2:
+				console.log("a ist kleiner als 0.2");
+				break;
+			case a<0.5:
+				console.log("a ist zwar größer-gleich 0.2, jedoch kleiner als 0.5");
+				break;
+			case a<0.8:
+				console.log("a ist zwar größer-gleich 0.5, jedoch immer noch kleiner als 0.8");
+				break;
+			default:
+				console.log("ok, a ist größer-gleich 0.8");
+		}
+				
+		</script>
+		<p>Hallo Welt!</p>
+	</body>
+</html>
