@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+th{
+    background: #ccc;
+}
+td, th {
+    border: 1px solid #aaaaaa;
+    text-align: center;
+    padding: 8px;
+}
